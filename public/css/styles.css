@@ -189,20 +189,21 @@ body{
                     align-items:center;
                     justify-content:space-between;
                     padding: 0px;
-                    margin:0px
+                    margin:0px;
+                    width: 100%
                 }
 
                     .precios{
-                        font-size: 14px;
+                        font-size: 18px;
                         margin: 0px;
-                        width: 30%;
+                        width: 50%;
                     }
             
                     .descuentos{
-                        font-size: 12px;
+                        font-size: 16px;
                         margin: 8px;
                         color:#39b54a;
-                        width: 70%;
+                        width: 50%;
                     }
             
                 .descripciones{
