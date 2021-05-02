@@ -1,0 +1,426 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+
+/* BODY */   
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    padding: 0px;
+        
+}
+
+    /*HEADER*/
+    .main-header{
+        width: 100%;
+        background-color: #EAC926;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+     }
+
+        /* Contiene logo + barra de búsqueda + texto del header*/ 
+        /* Diseño responsive: se ajustará en función de pantallas (ver etilos especiales) */ 
+        .main-header-top-bar{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+            /* Logo */
+            .logo{
+                width: 50%;
+                height: 50%;
+                padding: 5px;
+            } 
+
+            /* Barra de Busqueda contiene barra e icono */
+            .busqueda{
+                display: flex;
+                width: 50%;
+                height: 100%;
+                padding: 5px;
+            }
+
+                /*barra busqueda*/
+                .formbus{
+                    width: 90%;
+                    border-style: none;    
+                    height: 80%;
+                    border-radius: 5px;
+                }
+
+                /* icono de búsqueda (lupa)*/
+                    .search{
+                        background-color: white;
+                        border-style: none;
+                        width: 10%;
+                        padding: 0px;
+                        border-radius: 5px;
+                        margin-left: 5px;
+                        text-align: center;
+                    }
+
+
+            /* Etiqueta del texto de compra en cuotas del header*/
+            .copy-header{
+                font-weight: 400;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-size: 18px;
+                
+               
+            }
+
+
+        /* hamburguer button */
+        .hamburguer-button{
+            background-color: #1259c3;   
+            color:#FFF;
+            display:block;
+            max-width: 50px;
+            padding: 15px 0 px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            margin:auto
+        }
+        
+
+        /* Barra de navegacion */
+        /* Diseño responsive: en formatos pequeños se oculta */ 
+        .main-navbar{ 
+            display: none;
+        }
+
+            /* Estilo de contenidos de las barras de navegacion */
+            .main-navbar ul{ 
+                list-style: none;
+                margin: 0;
+                padding: 0
+            }  
+
+            .main-navbar a{
+                text-decoration: none;
+                color: #222222;
+                display: inline-block;
+                padding: 5px, 0;
+                font-size: 17px;
+            }
+
+                
+
+    /*SECTION BANNER*/
+    /* Diseño responsive: se ajustará en función de pantallas (ver etilos especiales) */ 
+    .banner{
+        width: 100%;
+        padding: 0;
+        margin-top: 180px; 
+        }
+            
+    /*MAIN*/
+
+    main{
+        width: 90%;
+        background-color: #ebebeb;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top:0px;
+        margin-bottom: 0px;
+    }
+
+    
+        /* HOME */
+        
+                
+        /*estilo de los encabezados de secciones de productos */
+        .titulares{
+            font-size: 24px;
+            padding: 20px;
+            margin: 0px
+         }   
+        
+         /* Contenido completo de la Articulos, incluyendo imagen*/
+        main article{
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 10px;
+        }
+
+            /* Contenedor con icono, precio, descuento y descripcion de producto */
+            .cajaArticulo{
+                position: relative;
+                border-top: solid 1px #ebebeb; 
+                background-color: white;   
+                margin: 0px;
+                border: 15px
+            }
+
+                /* Icono */
+                main article i{
+                    display: block;
+                    font-size: 16px;
+                    padding: 5px;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid #39b54a;
+                    background-color: #FFF;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 20px;
+                    top: -15px;
+                    color: #39b54a;
+                    transition: all 2s;
+                }
+
+                /*Precio y descuento */
+                .precioDescuento{
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-between;
+                }
+
+                    .precios{
+                        font-size: 18px;
+                        margin: 0px;
+                        width: 30%;
+                    }
+            
+                    .descuentos{
+                        font-size: 16px;
+                        margin: 8px;
+                        color:#39b54a;
+                        width: 70%;
+                    }
+            
+                .descripciones{
+                    font-size: 16px;
+                    display: none
+                } 
+
+             /* Hover */
+            main article:hover .descripciones{
+            display: block;
+            }
+
+            main article:hover {
+                box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            }
+
+            main article:hover i{
+                transform: rotate(-90deg);
+            }
+
+        
+        /*PAGINAS LOGIN Y REGISTER */        
+        
+        
+            
+        /* Formulario */
+        .create-form{
+            padding: 20px 15px;
+            margin-top: 0px;
+         } 
+
+            /* label + imput */
+            .control-formulario{
+                margin: 0px;    
+                padding: 10px;
+                width: 100%;
+            }
+
+                .control-formulario label{
+                    margin: 10px;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    width: 100%;
+                }
+
+                .control-formulario input{
+                    margin: 10px 5px 10px 5px
+                } 
+
+                .control{
+                    width: 100%;
+                    padding: 8px;
+                    border-style:none;
+                    border-radius: 8px;
+                    margin: 10px
+                }
+                
+                /* opciones */
+                .control-formulario1{
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 5px;     
+                }
+
+                    .control-formulario1 label{
+                        font-size: 13px;
+                        font-style: italic;
+                        width: 100%;
+                    }
+
+            .boton-formulario{
+                background-color: #1259c3;
+                border:none;
+                font-size: 15px;
+                color: #FFF;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+
+            /*Hover */
+            .boton-formulario:hover{
+                background-color: #0022AA
+            }
+
+            .login .boton-formulario{
+                background-color: #1259c3;
+                border:none;
+                font-size: 15px;
+                color: #FFF;
+                padding: 5px 10px;
+                border-radius: 5px;
+                width: 100%;
+            }
+
+/*FOOTER*/    
+    
+    footer section{
+        text-align: center;
+        margin: 50px
+    }
+
+    footer article{
+        margin: 20px
+    }
+
+    footer i{
+        font-size: 2em;
+        border-radius: 10px;
+        background-color: white;
+        color: #1259c3
+    }
+
+    .Copyrignt{
+        font-weight: lighter;
+    }
+
+
+/*TABLETS Y DESKTOP*/ 
+
+    /*CELULARES GRANDES*/
+    
+    @media (min-width: 361px){
+     
+        .articulos{
+            width: 100%;
+            display:flex;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content:space-between
+        }
+        
+        main article {
+        box-shadow: 0px 0px 10px rgb(53, 51, 51);
+        width: 48%;    
+        }
+
+        .descripciones{
+            display: block;
+        }
+
+        .main-navbar{
+            display:inline-block;   
+        } 
+
+        .navbar{
+            margin-bottom: 10px;
+        }
+
+        .hamburguer-button{
+            display: none
+        }
+    
+        .banner{
+            margin-top: 310px;
+        }
+
+        
+
+    }
+
+
+    /* TABLETS / DESKTOP*/
+    
+    @media (min-width: 769px){
+
+        .main-header-top-bar{
+            flex-wrap: nowrap;
+        }
+
+        .articulos{
+            width: 100%;
+            display:flex;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content:space-between
+        }
+        
+         main article {
+            box-shadow: 0px 0px 10px rgb(53, 51, 51);
+            width: 20%;    
+        }
+
+        .descripciones{
+            display: block;
+        }
+        
+        .hamburguer-button{
+            display: none
+        }
+    
+        .main-navbar{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main-navbar ul{
+            display:flex;
+        } 
+        
+        .main-navbar li{
+            margin: 0 5px
+        }
+
+        .banner{
+            margin-top: 140px;
+        }
+
+        /*FOOTER*/
+        .footerIconos{
+            display: flex;
+        }
+
+        .Copyrignt{
+            text-align: left;
+        }
+
+        footer i:hover{
+            color: #03264C
+        }
+    
+    }
+
